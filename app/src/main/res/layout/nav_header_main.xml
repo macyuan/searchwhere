@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/tv_nav_onekey_home_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/nav_header_padding"
+            android:drawableRight="@mipmap/icon_nav_onekey_home"
+            android:gravity="center_vertical"
+            android:text="@string/navigation_header_set_onekey_home"
+            android:textSize="@dimen/comment_text_headersize"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_nav_onekey_home_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/nav_fab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/bg_fly_home_white"
+                android:visibility="visible"
+                app:backgroundTint="@color/skin_colorAccent_indigo"
+                app:rippleColor="@color/colorPrimaryDark" />
+
+
+            <TextView
+                android:id="@+id/tv_nav_home_address_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nav_home_ready"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/comment_text_size" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_nav_menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="280dp">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@color/theme"
+            android:src="@mipmap/user_bg"
+            android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:layout_above="@+id/phone"
+                android:textColor="@color/textcolor_theme"
+                android:layout_marginLeft="@dimen/content_10dp"
+                android:textSize="@dimen/font_btn" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_gap_small"
+                android:layout_marginBottom="@dimen/content_10dp"
+                android:layout_marginLeft="@dimen/content_10dp"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="@dimen/font_small" />
+
+    </RelativeLayout>
+
+     <LinearLayout
+         android:layout_alignBottom="@+id/background"
+         android:layout_width="280dp"
+         android:paddingRight="@dimen/content_gap"
+         android:paddingLeft="@dimen/content_gap"
+         android:gravity="center_vertical"
+         android:background="@drawable/bg_dialog_follow"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content">
+
+         <EditText
+             android:id="@+id/desc_et"
+             android:layout_width="0dp"
+             android:layout_weight="2"
+             android:layout_height="50dp"
+             android:background="@null"
+             android:gravity="center_vertical"
+             android:hint="@string/hint_addfollow"
+             android:textColor="@color/textcolor_theme"
+             android:textColorHint="@color/gray_hint"
+             android:textCursorDrawable="@null"
+             android:visibility="invisible"
+             android:textSize="@dimen/font_medium" />
+
+         <TextView
+             android:id="@+id/cancel"
+             android:layout_width="0dp"
+             android:layout_weight="1.1"
+             android:gravity="center"
+             android:layout_height="wrap_content"
+             android:text="@string/cancel"
+             android:textColor="@color/textcolor_theme"
+             android:textSize="@dimen/font_actionbar" />
+
+         <TextView
+             android:id="@+id/addfollow"
+             android:layout_width="0dp"
+             android:gravity="center"
+             android:layout_weight="1.1"
+             android:layout_height="wrap_content"
+             android:text="@string/follow_add"
+             android:textColor="@color/textcolor_theme"
+             android:textSize="@dimen/font_actionbar" />
+
+     </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/title_follow_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_1dp"
+        android:layout_marginLeft="@dimen/content_gap"
+        android:layout_marginRight="@dimen/content_gap"
+        android:background="@drawable/light_divide" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white_item"
+        android:padding="@dimen/content_gap"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/head"
+            android:layout_width="@dimen/item_head_size_small"
+            android:layout_height="@dimen/item_head_size_small"
+            app:riv_border_width="0dip"
+            app:riv_mutate_background="true"
+            android:layout_marginRight="@dimen/content_gap"
+            app:riv_oval="true"
+            app:riv_tile_mode="repeat" />
+
+            <TextView
+                android:id="@+id/name"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/head"
+                android:layout_alignTop="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="@dimen/font_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="@dimen/content_10dp"
+                android:layout_toRightOf="@+id/head"
+                android:text="@string/hint_messge"
+                android:textColor="@color/gray_hint"
+                android:textSize="@dimen/font_least" />
+
+        <Button
+            android:id="@+id/accept_bt"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/button_bg_theme"
+            android:text="@string/accept"
+            android:textColor="@color/textcolor_theme"
+            android:textSize="@dimen/font_btn" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

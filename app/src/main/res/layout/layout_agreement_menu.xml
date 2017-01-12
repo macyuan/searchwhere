@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mytian.lb.mview.ClipRevealFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_agreement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="invisible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/head"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginRight="@dimen/content_gap"
+                android:layout_marginLeft="@dimen/content_gap"
+                android:layout_centerVertical="true"
+                app:riv_border_width="0dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                app:riv_tile_mode="repeat" />
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/head"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="@dimen/font_medium" />
+
+            <Button
+                android:id="@+id/agreement_cancle"
+                android:layout_width="70dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/content_10dp"
+                android:layout_marginBottom="@dimen/content_10dp"
+                android:layout_marginRight="@dimen/content_gap"
+                android:background="@drawable/button_bg_theme"
+                android:text="@string/cancel"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="@dimen/font_medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/agreement_cancle"
+                android:layout_marginLeft="@dimen/content_gap"
+                android:layout_marginRight="@dimen/content_gap"
+                android:background="@drawable/light_divide" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/info_layout"
+            android:layout_height="match_parent">
+
+            <com.pascalwelsch.holocircularprogressbar.HoloCircularProgressBar xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circular_progressbar"
+                style="@style/MCircularProgressBar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                app:marker_progress="0"
+                app:progress="0" />
+
+            <TextView
+                android:id="@+id/agreement_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/agreement_time"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/content_gap"
+                android:layout_marginTop="110dp"
+                android:text="tete"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/agreement_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:lineSpacingMultiplier="1.4"
+                android:text="15  00"
+                android:textColor="@color/textcolor_theme"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.mytian.lb.mview.ClipRevealFrame>
+

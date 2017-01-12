@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="@dimen/item_head_size"
+        android:layout_height="@dimen/item_head_size"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/content_gap"
+        android:layout_marginLeft="@dimen/content_gap"
+        android:layout_marginTop="@dimen/content_10dp"
+        android:layout_marginBottom="@dimen/content_10dp"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/like"
+        android:layout_toRightOf="@+id/head"
+        android:singleLine="true"
+        android:text="habit name"
+        android:textColor="@color/textcolor_theme"
+        android:textSize="@dimen/font_btn" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/dislike"
+        android:padding="@dimen/content_gap"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_like_normal" />
+
+    <ImageView
+        android:id="@+id/dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/content_gap"
+        android:layout_marginRight="@dimen/content_gap"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_dislike_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_1dp"
+        android:layout_below="@+id/head"
+        android:layout_marginRight="@dimen/content_gap"
+        android:layout_marginLeft="@dimen/content_gap"
+        android:background="@drawable/light_divide" />
+
+</RelativeLayout>
+

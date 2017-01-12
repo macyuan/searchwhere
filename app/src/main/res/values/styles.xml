@@ -1,0 +1,135 @@
+<resources>
+
+    <style name="menu_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">@dimen/drawerlayout_menu_gap</item>
+        <item name="android:paddingBottom">@dimen/drawerlayout_menu_gap</item>
+        <item name="android:paddingLeft">40dp</item>
+    </style>
+
+    <style name="drawer_ly_tv" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">35dp</item>
+    </style>
+
+    <style name="drawer_tv" >
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="drawer_value_tv" >
+        <item name="android:textColor">@color/theme</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="CheckBoxDrawable" parent="Material.Drawable.CheckBox"/>
+
+    <style name="RadioButtonDrawable" parent="Material.Drawable.RadioButton"/>
+
+    <style name="FloatingActionButtonIcon" >
+        <item name="lmd_state">@xml/fab_icon_states</item>
+        <item name="lmd_curState">0</item>
+        <item name="lmd_padding">2dp</item>
+        <item name="lmd_animDuration">400</item>
+        <item name="lmd_interpolator">@android:anim/accelerate_decelerate_interpolator</item>
+        <item name="lmd_strokeSize">3dp</item>
+        <item name="lmd_strokeColor">#FFFFFFFF</item>
+        <item name="lmd_strokeCap">butt</item>
+        <item name="lmd_strokeJoin">miter</item>
+        <item name="lmd_clockwise">true</item>
+    </style>
+
+    <!--底部弹出框-->
+    <!--动画-->
+    <style name="BottomViewTheme_Defalut">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="BottomToTopAnim">
+        <item name="android:windowEnterAnimation">@anim/push_translate_in</item>
+        <item name="android:windowExitAnimation">@anim/push_translate_out</item>
+    </style>
+
+    <style name="ListViewTheme">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:divider">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:smoothScrollbar">true</item>
+        <item name="android:scrollbarSize">@dimen/content_gap_small</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbars_bg_theme</item>
+    </style>
+
+    <style name="MCircularProgressBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="stroke_width">5dp</item>
+        <item name="progress" format="float">0.1</item>
+        <item name="progress_color">@color/pink</item>
+        <item name="progress_background_color">#ffd9cdc6</item>
+        <item name="marker_visible">true</item>
+        <item name="thumb_visible">true</item>
+    </style>
+
+    <!--百度地图-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--Toolbar背景色-->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <!--title顏色-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--主界面arrow顏色-->
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <!--次級界面arrow顏色-->
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置window背景透明，也就是去边框 -->
+    </style>
+
+
+</resources>
